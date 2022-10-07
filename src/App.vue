@@ -10,9 +10,9 @@
 </template>
 
 <script setup>
-import TheHeader from './components/TheHeader.vue';
-import TheMenu from './components/TheMenu.vue';
-import { useMenuStore } from './store/menu';
+import TheHeader from '~/components/TheHeader.vue';
+import TheMenu from '~/components/TheMenu.vue';
+import { useMenuStore } from '~/store/menu';
 
 const menuStore = useMenuStore();
 </script>

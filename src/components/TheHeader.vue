@@ -33,15 +33,16 @@
 </template>
 
 <script setup>
-import { useMenuStore } from '../store/menu';
+import { useMenuStore } from '~/store/menu';
 import { computed } from 'vue';
+
+import CloseIcon from '~/assets/img/Close.png';
+import HamburgerIcon from '~/assets/img/hamburger.png';
 
 const menuStore = useMenuStore();
 
 const burgerImg = computed(() => {
-    let url = menuStore.isActive
-        ? '/src/assets/img/Close.png'
-        : '/src/assets/img/hamburger.png';
+    let url = menuStore.isActive ? CloseIcon : HamburgerIcon;
 
     return url;
 });

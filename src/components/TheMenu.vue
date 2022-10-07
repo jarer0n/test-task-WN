@@ -21,7 +21,7 @@
 </template>
 
 <script setup>
-import { useMenuStore } from '../store/menu';
+import { useMenuStore } from '~/store/menu';
 
 const menuStore = useMenuStore();
 </script>
