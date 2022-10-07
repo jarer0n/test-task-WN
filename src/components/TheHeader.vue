@@ -14,7 +14,7 @@
                         <span>Москва и область</span>
                     </div>
 
-                    <AppNotification style="margin-left: 32px" />
+                    <NotificationIcon style="margin-left: 32px" />
 
                     <div
                         @click="menuStore.switchMenu()"
@@ -29,7 +29,7 @@
 </template>
 
 <script setup>
-import AppNotification from './AppNotification.vue';
+import NotificationIcon from './NotificatonIcon.vue';
 import { useMenuStore } from '~/store/menu';
 
 import { computed } from 'vue';
