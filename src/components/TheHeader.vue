@@ -14,12 +14,8 @@
                         <span>Москва и область</span>
                     </div>
 
-                    <div class="notification">
-                        <img
-                            src="../assets/img/notification.png"
-                            alt="notification"
-                        />
-                    </div>
+                    <AppNotification style="margin-left: 32px" />
+
                     <div
                         @click="menuStore.switchMenu()"
                         class="burger flex-center"
@@ -33,7 +29,9 @@
 </template>
 
 <script setup>
+import AppNotification from './AppNotification.vue';
 import { useMenuStore } from '~/store/menu';
+
 import { computed } from 'vue';
 
 import CloseIcon from '~/assets/img/Close.png';
@@ -71,11 +69,6 @@ const burgerImg = computed(() => {
                 margin-left: 9px;
             }
         }
-        & > .notification {
-            margin-left: 32px;
-
-            cursor: pointer;
-        }
 
         & > .burger {
             width: 24px;
@@ -95,5 +88,5 @@ const burgerImg = computed(() => {
     .burger {
         display: flex !important;
     }
-} ;
+}
 </style>
